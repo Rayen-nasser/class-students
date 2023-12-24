@@ -34,7 +34,7 @@ export class EditStudentComponent {
       profile: ['', Validators.required],
       gender: ['', Validators.required],
       hobbyField: new FormControl(this.data),
-      country: ['', Validators.required]
+      section: ['', Validators.required]
     })
   }
 

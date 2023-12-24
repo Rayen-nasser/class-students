@@ -7,13 +7,15 @@ import { EditStudentComponent } from './components/edit-student/edit-student.com
 import { AppRoutingModule } from './app.routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SectionsComponent } from './components/sections/sections.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddStudentComponent,
     ListStudentsComponent,
-    EditStudentComponent
+    EditStudentComponent,
+    SectionsComponent
   ],
   imports: [
     BrowserModule,

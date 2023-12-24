@@ -32,4 +32,8 @@ export class ApiStudentsService {
     return this.http.put<Students>(this.url + "update.php", newStudent)
   }
 
+  getStudentsByClass(id: any){
+    return this.http.get<Students[]>(this.url + 'studentsByClass.php?section=' + id)
+  }
+
 }

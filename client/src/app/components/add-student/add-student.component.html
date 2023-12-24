@@ -77,6 +77,7 @@
 
               <input type="checkbox"
               class="form-check-input"
+              [value]="result.value"
                 [ngModel]="result.value"
                 (ngModelChange)="result.value = $event; info.get('hobbyField').setValue(parse())"
                 [ngModelOptions]="{standalone: true}"
@@ -94,12 +95,13 @@
 
 
           <div class="form-group  mt-3">
-            <label for="country">Country:</label>
-            <select formControlName="country" class="form-control" id="country" name="country">
-              <option value="usa">United States</option>
-              <option value="canada">Canada</option>
-              <option value="uk">United Kingdom</option>
-              <!-- Add more country options as needed -->
+            <label for="section">section:</label>
+            <select formControlName="section" class="form-control" id="section" name="section">
+              <option value="2Dsi2">2Dsi2</option>
+              <option value="2Dsi1">2Dsi1</option>
+              <option value="2Mvw2">2Mvw2</option>
+              <option value="2Mvw1">2Mvw1</option>
+              <!-- Add more section options as needed -->
             </select>
           </div>
           <button type="submit" class="  mt-3 btn btn-primary">Submit</button>

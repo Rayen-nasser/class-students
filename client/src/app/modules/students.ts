@@ -6,5 +6,5 @@ export class Students {
   profile?: string;
   gender?:string;
   hobbies?:string;
-  country?:string;
+  section?:string;
 }
